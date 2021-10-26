@@ -11,8 +11,8 @@ Goal: To have bi-directional links between commit messages and published making-
 
 ## Optimizations
 
-- [ ] [Nicer links in commit messages](#nicer-links-in-commit-messages)
-- [ ] Can we get rid of all the tags?
+- [x] [Nicer links in commit messages](#nicer-links-in-commit-messages)
+- [ ] [Can we get rid of all the tags?](#can-we-get-rid-of-all-the-tags)
 - [ ] Tooling support for bi-directional links
 
 
@@ -75,14 +75,64 @@ Next commit:
 
 Known to work:
 
-- Plain URLs: https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-06-40
+- [x] Plain URLs: https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-06-40
 
 Other syntaxes:
 
-- [Link Text](https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-06-40)
-- [Link Text with title](https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-06-40 "Title")
-- [Reference Style][1]
+- [ ] [Link Text](https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-06-40)
+- [ ] [Link Text with title](https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-06-40 "Title")
+- [ ] [Reference Style][1]
 
 Which of these will work?
 
 [1]: https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-06-40
+
+Unfortunately, only plain URLs seem to work :-(
+
+
+<a id="commit-2021-10-26-08-05"></a>
+
+## Can we get rid of all the tags?
+
+Are there other possiblities to "tag" a commit?
+And to find it via a GitHub link?
+
+--> GitHub supports searching for commits (and other information),
+but only on the default branch.
+I'll have to think of branches anyway some day...
+
+But speaking of branches, I could make gh-pages an orphaned branch again.
+This would mean that I had to do two commits instead of one:
+one in the feature or main branch, and one in the gh-pages branch.
+
+Advantages:
+- no need for tags or other search targets,
+  because the commit hash is known when committing to the gh-pages branch
+- not necessarily a 1:1 relation between feature commits and gh-pages commits
+- no need to link abandoned branches into the main branch
+  just to keep its making-of notes
+
+Neutral:
+- 2 commits versus 1 commit and 1 tag
+
+Disadvantages:
+- Having to switch between branches
+  (maybe it's possible to have the branches checked out in two directories)
+
+This sounds interesting. Should I give it a try? Why not...
+I won't rebuild the whole commit history (yet).
+Instead I'll try it with new branches.
+(I think both need to be orphaned?)
+
+
+I take the opportunity to try syntax highlighting that could be used for commit messages
+in the making-of:
+
+[commit-2021-10-26-08-05](https://github.com/pitnyr/making-of-making-of/commit/f0f0b3bad157defc5a6161f00a84f457a0f669a8)
+```email
+title: Think about getting rid of tags
+
+See https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-08-05
+
+Also trying a new syntax for commit messages in the making-of markdown.
+```
