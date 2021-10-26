@@ -12,7 +12,7 @@ Goal: To have bi-directional links between commit messages and published making-
 ## Optimizations
 
 - [x] [Nicer links in commit messages](#nicer-links-in-commit-messages)
-- [ ] [Can we get rid of all the tags?](#can-we-get-rid-of-all-the-tags)
+- [x] [Can we get rid of all the tags?](#can-we-get-rid-of-all-the-tags)
 - [ ] Tooling support for bi-directional links
 
 
@@ -34,6 +34,8 @@ It works! Of course this was the easy part.
 
 ## Link to commit message
 
+### The old way (with tags)
+
 - We don't know the commit hash before actually performing the commit.
 - Therefore we need another unique ID which can be fixed before commit.
 - Would a tag with a timestamp work?
@@ -46,7 +48,7 @@ The commit message is shown on the tag page, but it seems that it isn't nicely f
 You have to click on the commit hash to see the formatted commit.
 That's ok, though.
 
---
+### The new way (with separate log branch)
 
 The alternative with a separate gh-pages branch:
 
@@ -67,11 +69,9 @@ The alternative with a separate gh-pages branch:
 
 Let's test which link syntaxes work in GitHub commit messages...
 
-Next commit:
-
 [commit-2021-10-26-06-40](https://github.com/pitnyr/making-of-making-of/commit/a9a4585ab2db1358aeeb50caa263f2c7816591f6)
-
-**Test link syntax in GitHub commit messages**
+```email
+title: Test link syntax in GitHub commit messages
 
 Known to work:
 
@@ -86,8 +86,9 @@ Other syntaxes:
 Which of these will work?
 
 [1]: https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-06-40
+```
 
-Unfortunately, only plain URLs seem to work :-(
+Unfortunately, only plain URLs seem to work as expected :-(
 
 
 <a id="commit-2021-10-26-08-05"></a>
@@ -97,9 +98,15 @@ Unfortunately, only plain URLs seem to work :-(
 Are there other possiblities to "tag" a commit?
 And to find it via a GitHub link?
 
+
+### Searching
+
 --> GitHub supports searching for commits (and other information),
 but only on the default branch.
 I'll have to think of branches anyway some day...
+
+
+### Separate branches
 
 But speaking of branches, I could make gh-pages an orphaned branch again.
 This would mean that I had to do two commits instead of one:
@@ -125,12 +132,14 @@ Instead I'll try it with new branches.
 (I think both need to be orphaned?)
 
 
+### Commit message syntax highlight
+
 I take the opportunity to try syntax highlighting that could be used for commit messages
 in the making-of:
 
 [commit-2021-10-26-08-05](https://github.com/pitnyr/making-of-making-of/commit/f0f0b3bad157defc5a6161f00a84f457a0f669a8)
 ```email
-title: Think about getting rid of tags
+title: Thoughts about getting rid of tags
 
 See https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-08-05
 
