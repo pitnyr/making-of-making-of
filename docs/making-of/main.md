@@ -8,7 +8,7 @@ Write a log of the steps, thoughts, etc while implementing a program
 
 ## Needed
 
-- [ ] Bidirectional links between commits and "chapters" in the log
+- [ ] [Bidirectional links between commits and "chapters" in the log](#bidirectional-links)
 - [ ] (Automatically?) extract commit messages from the log
 - [ ] Embed nicely formatted code
 
@@ -72,3 +72,8 @@ So I looked at static site generators, for example here: https://jamstack.org/ge
 I didn't find one that stands out for my purpose, so I think I could as well stick with Jekyll and Github Pages.
 
 So let's give that a try...
+
+
+## Bidirectional Links
+
+I'll explore possibilities for bidirectional links in feature branch "[links](links.md)".
