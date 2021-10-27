@@ -71,7 +71,7 @@ Let's test which link syntaxes work in GitHub commit messages...
 
 [commit-2021-10-26-06-40](https://github.com/pitnyr/making-of-making-of/commit/a9a4585ab2db1358aeeb50caa263f2c7816591f6)
 ```email
-title: Test link syntax in GitHub commit messages
+subject: Test link syntax in GitHub commit messages
 
 Known to work:
 
@@ -139,7 +139,7 @@ in the making-of:
 
 [commit-2021-10-26-08-05](https://github.com/pitnyr/making-of-making-of/commit/f0f0b3bad157defc5a6161f00a84f457a0f669a8)
 ```email
-title: Thoughts about getting rid of tags
+subject: Thoughts about getting rid of tags
 
 See https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-2021-10-26-08-05
 
