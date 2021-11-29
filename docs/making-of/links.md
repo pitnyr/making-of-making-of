@@ -13,7 +13,6 @@ Goal: To have bi-directional links between commit messages and published making-
 
 - [x] [Nicer links in commit messages](#nicer-links-in-commit-messages)
 - [x] [Can we get rid of all the tags?](#can-we-get-rid-of-all-the-tags)
-- [ ] Tooling support for bi-directional links
 
 
 <a id="commit-2021-10-25-20-48"></a>
@@ -145,3 +144,10 @@ See https://pitnyr.github.io/making-of-making-of/making-of/links.html#commit-202
 
 Also trying a new syntax for commit messages in the making-of markdown.
 ```
+
+This feels much better. I'll delete the old tags and the old branches...
+
+
+## Done
+
+OK, ready to be [merged into the main branch](main.md#commit-2021-11-29-20-20).

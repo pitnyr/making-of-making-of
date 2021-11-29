@@ -8,7 +8,7 @@ Write a log of the steps, thoughts, etc while implementing a program
 
 ## Needed
 
-- [ ] [Bidirectional links between commits and "chapters" in the log](#bidirectional-links)
+- [x] [Bidirectional links between commits and "chapters" in the log](#bidirectional-links)
 - [ ] (Automatically?) extract commit messages from the log
 - [ ] Embed nicely formatted code
 
@@ -74,6 +74,13 @@ I didn't find one that stands out for my purpose, so I think I could as well sti
 So let's give that a try...
 
 
+<a id="commit-commit-2021-11-29-20-20"></a>
+
 ## Bidirectional Links
 
 I'll explore possibilities for bidirectional links in feature branch "[links](links.md)".
+
+[commit-2021-11-29-20-20](https://github.com/pitnyr/making-of-making-of/commit/ed3b203b8139e30f05ec0e05e6fd3c24fa8716c8)
+```email
+subject: Merge branch 'links'
+```
