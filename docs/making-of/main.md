@@ -9,7 +9,7 @@ Write a log of the steps, thoughts, etc while implementing a program
 ## Needed
 
 - [x] [Bidirectional links between commits and "chapters" in the log](#bidirectional-links)
-- [ ] (Automatically?) extract commit messages from the log
+- [ ] [Extract commit messages from the log](#extract-commit-messages-from-the-log)
 - [ ] Embed nicely formatted code
 
 
@@ -63,6 +63,8 @@ With a separate gh-pages branch this is totally flexible.
   - https://www.dendron.so/
 
 
+<a id="commit-2021-10-26-14-40"></a>
+
 ## Evaluation
 
 I looked at some note taking programs, but I think I don't need most of their features.
@@ -73,14 +75,26 @@ I didn't find one that stands out for my purpose, so I think I could as well sti
 
 So let's give that a try...
 
+[commit-2021-10-26-14-40](https://github.com/pitnyr/making-of-making-of/commit/e343ff601e3a357658aeda91091130823eae8425)
+```email
+subject: Add a license file
 
-<a id="commit-commit-2021-11-29-20-20"></a>
+...and a dummy file to prevent empty commits.
+```
+
+
+<a id="commit-2021-11-29-20-20"></a>
 
 ## Bidirectional Links
 
 I'll explore possibilities for bidirectional links in feature branch "[links](links.md)".
 
-[commit-2021-11-29-20-20](https://github.com/pitnyr/making-of-making-of/commit/ed3b203b8139e30f05ec0e05e6fd3c24fa8716c8)
+[commit-2021-11-29-20-20](https://github.com/pitnyr/making-of-making-of/commit/5b34922ff88ac1608ccd5c5fb2ec6a1af020830d)
 ```email
 subject: Merge branch 'links'
 ```
+
+
+## Extract commit messages from the log
+
+Let's see, which tools could help writing the Making-Of docs: feature branch "[tools](tools.md)".
