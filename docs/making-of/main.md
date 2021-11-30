@@ -95,6 +95,21 @@ subject: Merge branch 'links'
 ```
 
 
+<a id="commit-2021-11-30-17-05"></a>
+
 ## Extract commit messages from the log
 
 Let's see, which tools could help writing the Making-Of docs: feature branch "[tools](tools.md)".
+
+[commit-2021-11-30-17-05](https://github.com/pitnyr/making-of-making-of/commit/953a3f1b5a334af3c599cc5df494da332086f5d4)
+```email
+subject: Merge branch 'tools'
+```
+
+I could add more tools, for example for
+
+- automating merge commits
+- moving and/or renaming a repository
+- ...
+
+but I think it's pretty usable already, so I'll leave it as it is...
