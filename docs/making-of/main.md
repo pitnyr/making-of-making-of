@@ -113,3 +113,15 @@ I could add more tools, for example for
 - ...
 
 but I think it's pretty usable already, so I'll leave it as it is...
+
+
+## Cleanup
+
+<a id="commit-2021-11-30-17-20"></a>
+
+[commit-2021-11-30-17-20](https://github.com/pitnyr/making-of-making-of/commit/5c1fef185cb666ab84769cd8e470805ae1575912)
+```email
+subject: Cleanup
+
+Just adding a README and a VS Code workspace definition.
+```
